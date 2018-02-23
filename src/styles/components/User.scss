@@ -6,11 +6,14 @@
 }
 .item {
     display: flex;
+    height: 3.8rem;
+    padding: 0.2rem;
 }
 .content {
     margin-left: 0.8rem;
     align-self: center;
     h3 {
         font-size: 1.6rem;
+        margin: 0;
     }
 }
