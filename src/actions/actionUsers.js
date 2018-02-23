@@ -4,9 +4,15 @@ import { API_GATEWAY, API_LIST_USERS, API_USER_PATH, DELAY_PARAM } from '../cons
 
 
 // list users
+export const LIST_USERS_START = 'gd:LIST_USERS_START';
+export const actionListUsersStart = () => {
+    return {
+        type: LIST_USERS_START
+    }
+};
 export const LIST_USERS = 'gd:LIST_USERS';
-export const actionListUsers = () => {
-    const payload = axios.get(API_GATEWAY + API_LIST_USERS, { params: { ...DELAY_PARAM(3) } });
+export const actionListUsers = (page = 1) => {
+    const payload = axios.get(API_GATEWAY + API_LIST_USERS, { params: { ...DELAY_PARAM(0), page } });
     return {
         type: LIST_USERS,
         payload

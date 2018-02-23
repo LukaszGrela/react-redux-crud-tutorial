@@ -1,0 +1,16 @@
+.avatar {
+    width: 32px;
+    height: 32px;
+
+    align-self: center;
+}
+.item {
+    display: flex;
+}
+.content {
+    margin-left: 0.8rem;
+    align-self: center;
+    h3 {
+        font-size: 1.6rem;
+    }
+}
